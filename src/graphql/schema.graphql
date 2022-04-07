@@ -1,0 +1,16 @@
+type Query {
+	getItem(name: String!): Item
+	listItem: [Item!]!
+}
+
+type Mutation {
+	createItem(item: ItemInput!): Item!
+}
+
+input ItemInput {
+	name: String!
+}
+
+type Item {
+	name: String!
+}
